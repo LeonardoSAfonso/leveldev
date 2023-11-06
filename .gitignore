@@ -1,0 +1,7 @@
+/.bundle
+/data/*
+/tmp/*
+/log/*
+/coverage
+
+.vscode

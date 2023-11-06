@@ -1,0 +1,13 @@
+<div>
+	<% @topics.each do |t| %>
+		<%= render t %> <br />
+		<p><%= link_to "show", t %></p>
+		<hr/>
+	<% end %>
+</div>
+
+<% if notice.present? %>
+	<p style="color: green;"><%= notice %></p>
+<% end %>
+
+<%= link_to "Novo Tópico", new_topic_path %>

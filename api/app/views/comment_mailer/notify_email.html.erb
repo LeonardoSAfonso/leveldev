@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hi <%= @comment.post.email %></h1>
+    <p>
+      You have a new comment in your post,
+      made by user is: <%= @comment.email %>.<br>
+    </p>
+    <p>
+      To see now <a href="<%= @url %>">click here link</a>.
+    </p>
+    <p>Thanks and have a great day!</p>
+  </body>
+</html>

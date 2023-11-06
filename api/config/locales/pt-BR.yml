@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "A validação falhou: %{errors}"
+      models:
+        topic:
+          attributes:
+            titulo:
+              blank: "Não pode ser vazio"
+        post:
+          attributes:
+            title:
+              blank: "não pode ser vazio"
+              too_short: "precisa ter pelo menos %{count} caracteres"

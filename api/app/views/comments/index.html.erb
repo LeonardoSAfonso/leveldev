@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Comments</h1>
+
+<div id="comments">
+  <% @comments.each do |comment| %>
+    <h3><%= comment.body %></h3>
+    <p>
+      post:
+      <%= comment.post.title %>
+      <%= comment.post.email %>
+      <%= link_to "Show...", comment %>
+    </p>
+    <hr />
+  <% end %>
+</div>
+
+<%= link_to "New comment", new_comment_path %>
